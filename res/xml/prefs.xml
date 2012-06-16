@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory
+        android:title="@string/namesCategory">
+        
+       	<EditTextPreference 
+        	android:title="@string/home"
+        	android:key="home"
+        	android:dialogTitle="@string/teamNameDialogTitle"/>
+    
+    	<EditTextPreference 
+        	android:title="@string/away"
+        	android:key="away"
+        	android:dialogTitle="@string/teamNameDialogTitle"/>
+    	
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="@string/chronoCategory">
+        
+       	<EditTextPreference
+        	android:title="@string/min"
+        	android:key="min"/>
+    
+    	<EditTextPreference 
+        	android:title="@string/sec"
+        	android:key="sec"/>
+    	
+    </PreferenceCategory>
+    
+</PreferenceScreen>

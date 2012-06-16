@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="TextWithShadow">
+    	<item name="android:textColor">#ffffff</item>>
+    	<item name="android:textStyle">bold</item>
+    	<item name="android:shadowColor">#000000</item>
+    	<item name="android:shadowDx">1</item>
+    	<item name="android:shadowDy">1</item>
+    	<item name="android:shadowRadius">2</item>
+	</style>
+	
+    <style name="ChronoStyle" parent="TextWithShadow">
+    	<item name="android:textSize">50dp</item>
+    	<item name="android:layout_margin">0dp</item>
+    	<item name="android:gravity">center</item>
+    </style>
+	
+    <style name="ChronoButton" parent="TextWithShadow">
+    	<item name="android:layout_margin">3dp</item>
+    	<item name="android:layout_gravity">center_vertical</item>
+    	<item name="android:background">@drawable/button_style</item>
+	</style>
+    
+    <style name="BaseNameStyle" parent="TextWithShadow">
+        <item name="android:textSize">30dp</item>
+    </style>
+    
+    <style name="BaseScoreboardStyle" parent="TextWithShadow">
+        <item name="android:textSize">100dp</item>
+    </style>
+    
+    <style name="BaseButtonStyle" parent="TextWithShadow">
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@drawable/button_style</item>
+    </style>
+    
+    <style name="BaseButtonWithTextStyle"  parent="BaseButtonStyle">
+        <item name="android:textSize">20dp</item>
+    </style>
+    
+    <style name="TabletNameStyle" parent="BaseNameStyle">
+        <item name="android:textSize">85dp</item>
+    </style>
+    
+    <style name="TabletScoreboardStyle" parent="BaseScoreboardStyle">
+        <item name="android:textSize">250dp</item>
+    </style>
+    
+    <style name="TabletButtonStyle" parent="BaseButtonStyle">
+        <item name="android:textSize">80dp</item>
+    </style>
+    
+    <style name="TabletButtonWithTextStyle" parent="BaseButtonWithTextStyle">
+        <item name="android:textSize">30dp</item>
+    </style>
+
+</resources>

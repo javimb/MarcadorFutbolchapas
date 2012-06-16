@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Marcador de FutbolChapas</string>
+    
+    <!-- Main -->
+    <string name="reverse">Reverse</string>
+    <string name="separator">-</string>
+    <string name="increase">+</string>
+    <string name="decrease">-</string>
+    <string name="startChrono">Start</string>
+    <string name="pauseChrono">Pause</string>
+    <string name="resetChrono">Reset</string>
+    
+    <!-- Menu -->
+    <string name="prefsMenu">Preferences</string>
+    <string name="shareMenu">Share</string>
+    <string name="infoMenu">About</string>
+    
+    <!-- Preferences -->
+    <string name="namesCategory">Teams</string>
+    <string name="home">Home</string>
+    <string name="away">Away</string>
+    <string name="teamNameDialogTitle">Name</string>
+    <string name="chronoCategory">Chrono</string>
+    <string name="min">Minutes</string>
+    <string name="sec">Seconds</string>
+    <string name="chronoError">Not a valid time!</string>
+    
+    <!-- Info -->
+    <string name="infoTitle">Information</string>
+    <string name="manualTitle">Instructions:</string>
+    <string name="manualText">\n-Use the buttons to increase/decrease a scoreboard
+        					\n-Press for a second a scoreboard to reset it
+        					\n-Press for a second the separator (-) to reset both scoreboards</string>
+    <string name="authorTitle">\nAuthor:</string>
+    <string name="authorText">\nJavi Imbernón
+        					\nTwitter: @javimb9
+        					\nWeb: javimb.com</string>
+    <string name="futbolchapasTitle">\nFutbolChapas:</string>
+    <string name="futbolchapasText">\nFederacion Española LigaFutbolChapas (LFC)
+        							\nTwitter: @lfcfutbolchapas
+        							\nWeb: ligafutbolchapas.es
+        							\n\nHay cosas que con el tiempo dejan de ser solo de niños&#8230;</string>
+    
+    <!-- Share -->
+    <string name="shareTitle">Share using:</string>
+    
+    <!-- Defaults -->
+    <string name="homeDefaultName">Home</string>
+    <string name="awayDefaultName">Away</string>
+    
+</resources>

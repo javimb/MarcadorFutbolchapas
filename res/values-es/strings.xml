@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Main -->
+    <string name="reverse">Invertir</string>
+    
+    <!-- Menu -->
+    <string name="prefsMenu">Preferencias</string>
+    <string name="shareMenu">Compartir resultado</string>
+    <string name="infoMenu">Información</string>
+    
+    <!-- Preferences -->
+    <string name="namesCategory">Equipos</string>
+    <string name="home">Local</string>
+    <string name="away">Visitante</string>
+    <string name="teamNameDialogTitle">Nombre del equipo</string>
+    <string name="chronoCategory">Cronómetro</string>
+    <string name="min">Minutos</string>
+    <string name="sec">Segundos</string>
+    <string name="chronoError">¡Tiempo introducido no válido!</string>
+    
+    <!-- Info -->
+    <string name="infoTitle">Información</string>
+    <string name="manualTitle">Instrucciones de uso:</string>
+    <string name="manualText">\n-Para aumentar o disminuir un marcador use los botones correspondientes
+        					\n-Para reiniciar un marcador individualmente, presione durante un segundo el número
+        					\n-Para reiniciar los dos marcadores presiones el separador (-) durante un segundo</string>
+    <string name="authorTitle">\nAutor:</string>
+    <string name="authorText">\nJavi Imbernón
+        					\nTwitter: @javimb9
+        					\nWeb: javimb.com</string>
+    <string name="futbolchapasTitle">\nFutbolChapas:</string>
+    <string name="futbolchapasText">\nFederación Española LigaFutbolChapas (LFC)
+        							\nTwitter: @lfcfutbolchapas
+        							\nWeb: ligafutbolchapas.es
+        							\n\nHay cosas que con el tiempo dejan de ser solo de niños&#8230;</string>
+    
+    
+    <!-- Share -->
+    <string name="shareTitle">Compartir resultado con:</string>
+    
+    <!-- Defaults -->
+    <string name="homeDefaultName">Local</string>
+    <string name="awayDefaultName">Visitante</string>
+
+</resources>
