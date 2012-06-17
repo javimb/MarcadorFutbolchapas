@@ -1,6 +1,8 @@
 package com.javimb.MarcadorFutbolChapas;
 
+import android.content.Context;
 import android.os.CountDownTimer;
+import android.os.Vibrator;
 import android.widget.TextView;
 
 public class CountDown {
@@ -8,13 +10,16 @@ public class CountDown {
 	private int min, sec, startMin, startSec;
 	private boolean running;
 	private CountDownTimer timer;
+	private Vibrator vibrator;
+	private final long[] pattern = {0, 500, 500, 500, 500, 1000};
 	
-	public CountDown(TextView text, int startMin, int startSec) {
+	public CountDown(Context context, TextView text, int startMin, int startSec) {
 		this.text = text;
 		this.startMin = startMin;
 		this.startSec = startSec;		
 		this.min = startMin;
-		this.sec = startSec;		
+		this.sec = startSec;
+		vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
 		this.running = false;
 		initText();
 	}
@@ -27,10 +32,11 @@ public class CountDown {
 		     }
 
 		     public void onFinish() {
-		    	 running = false;
-		    	 reset();
+		    	 vibrator.vibrate(pattern, -1);
+	    		 running = false;
+	    		 reset();		    	 
 		     }
-		  };
+		};
 	}
 	
 	public boolean start(){

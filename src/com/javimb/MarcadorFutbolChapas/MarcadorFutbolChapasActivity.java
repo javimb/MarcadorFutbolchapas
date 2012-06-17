@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +30,9 @@ public class MarcadorFutbolChapasActivity extends Activity implements OnClickLis
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
 		prefs.registerOnSharedPreferenceChangeListener(this);
         
@@ -56,10 +60,10 @@ public class MarcadorFutbolChapasActivity extends Activity implements OnClickLis
         resetChrono.setOnClickListener(this);
         
         try {
-			countDown = new CountDown(chrono, Integer.parseInt(prefs.getString("min", "15")),
+			countDown = new CountDown(this, chrono, Integer.parseInt(prefs.getString("min", "15")),
 					Integer.parseInt(prefs.getString("sec", "0")));
 		} catch (NumberFormatException e) {
-			countDown = new CountDown(chrono, 15, 0);
+			countDown = new CountDown(this, chrono, 15, 0);
 		}
     }
     
@@ -160,7 +164,7 @@ public class MarcadorFutbolChapasActivity extends Activity implements OnClickLis
 		}
 		if(key.equals("min") || key.equals("sec")){
 			try {
-				countDown = new CountDown(chrono, Integer.parseInt(prefs.getString("min", "15")),
+				countDown = new CountDown(this, chrono, Integer.parseInt(prefs.getString("min", "15")),
 						Integer.parseInt(prefs.getString("sec", "0")));
 			} catch (NumberFormatException e) {
 				Toast toast = Toast.makeText(getApplicationContext(), getText(R.string.chronoError), Toast.LENGTH_LONG);

@@ -2,7 +2,44 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="#449def" >
+    
+    <!-- Layout for Chrono -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView 
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	style="@style/TabletChronoStyle"
+        	android:id="@+id/chrono"/>
+        
+        <Button 
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	style="@style/TabletChronoButton"
+        	android:text="@string/startChrono"
+        	android:id="@+buttons/startChrono"/>
+        
+        <Button 
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	style="@style/TabletChronoButton"
+        	android:text="@string/pauseChrono"
+        	android:id="@+buttons/pauseChrono"/>
+        
+        <Button 
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	style="@style/TabletChronoButton"
+        	android:text="@string/resetChrono"
+        	android:id="@+buttons/resetChrono"/>
+        
+    </LinearLayout>
     
     <!-- Layout for scoreborad -->
     <LinearLayout 
